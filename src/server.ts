@@ -1,8 +1,10 @@
 import express, { Application } from "express";
 
 import * as http from "http";
+import bodyParser from "body-parser";
 
 const app = express();
+app.use(bodyParser.json());
 
 export default class Server {
   //Load router
